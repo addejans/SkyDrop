@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SkyDrop</title>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCH0mLq7Smpp3dHKhDRUbrEdJuaDcuZ1mo"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/tsp.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/push-button.css"> 
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+
+<body>
+<div>
+  <div id="map-canvas" style="width:100%; height:560px;"></div>
+  
+<section id="cd-google-map">
+	<div id="map-canvas"></div>
+	<address>SkyDrop, made with love @ WSUHacks 2017</address> 
+</section>
+
+  <div class="hr vpad"></div>
+  <div>
+	
+    <table style="margin:0 auto; text-align:center;">
+	   <tr id="ga-buttons">
+			<td colspan="2">
+				<a href="#" class="push_button blue" id="find-route">Get optimized route</a>
+				<a href="#" class="push_button red NOT-invisible" id="send-drone">Send drone on mission</a>
+				
+				<br/>
+			    <!-- <a href="#" class="" id="clear-map">Clear nodes</a></td> -->
+        </tr>
+        <tr>
+            <td colspan="2" id="destinations-count" class="">0</td>
+        </tr>
+		<tr>
+			<td colspan="2"><span style="font-size: 60px">stops</span></td>
+		</tr>
+		<tr><td colspan="2"><br /><br /></td></tr>
+        <tr class="ga-info" style="display:none;">
+            <td></td><td id="generations-passed">Calculating...</td>
+        </tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>
